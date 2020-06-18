@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testyantra.parallelscripts.ParametersDemo">
+      <class name="com.testyantra.scripts.UrbanLadderMenuItems">
         <methods>
-          <include name="tc_01"/>
+          <include name="tc_verifyMenuItems"/>
         </methods>
-      </class> <!-- com.testyantra.parallelscripts.ParametersDemo -->
+      </class> <!-- com.testyantra.scripts.UrbanLadderMenuItems -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
