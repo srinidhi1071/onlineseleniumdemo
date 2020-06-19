@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 import com.google.common.io.Files;
 
@@ -18,6 +19,9 @@ public class MyListeners implements ITestListener{
 	
 	  public void onTestStart(ITestResult result) {
 		   System.out.println("Test "+result.getName()+" Started");
+		   Reporter.log(result.getName());
+		   System.out.println(result.getName());
+		   
 		  }
 
 		  /**

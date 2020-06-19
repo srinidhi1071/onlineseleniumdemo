@@ -43,14 +43,16 @@ public class UrbanLadderMenuItems {
 			for(WebElement subMenuItem:subMenuItems) {
 				System.out.println(subMenuItem.getText());
 				System.out.println("------------------------------");
+				
+				 List<WebElement> submenu1 = driver.findElements(By.xpath("//a[text()='"+subMenuItem.getText()+"']/parent::div/following-sibling::ul//span"));
+				    for (WebElement sm : submenu1) {
+				     System.out.println(sm.getText());
 			}
 		
 		}
 		
+	}
 		driver.close();
-
-		
-
 	}
 
 }
